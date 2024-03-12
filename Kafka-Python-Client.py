@@ -1,4 +1,4 @@
-'''Install kafka-python is similar to other regular Python packages:
+'''Installing kafka-python is similar to other regular Python packages:
 pip install kafka-python
 
 KafkaAdminClient Class
@@ -9,6 +9,7 @@ Create a KafkaAdminClient object
 To use KafkaAdminClient, we first need to define and create a KafkaAdminClient object:'''
 
 admin_client = KafkaAdminClient(bootstrap_servers="localhost:9092", client_id='test')
+
 '''bootstrap_servers="localhost:9092" argument specifies the host/IP and port that the consumer should contact to
 bootstrap initial cluster metadata
 client_id specifies an id of current admin client
