@@ -1,14 +1,27 @@
 Objectives
 
 Start a MySQL Database server.
+(#start_mysql
 
-Create a table to hold the toll data.
+#mysql --host=127.0.0.1 --port=3306 --user=root --password=Mjk0NDQtcnNhbm5h
+
+#create database tolldata;
+
+#use tolldata;
+
+#create table livetolldata(timestamp datetime,vehicle_id int,vehicle_type char(15),toll_plaza_id smallint);
+
+#Create a table to hold the toll data.
+
+#exit)
 
 Start the Kafka server.
 
 Install the Kafka python driver.
+#python3 -m pip install kafka-python
 
 Install the MySQL python driver.
+#python3 -m pip install mysql-connector-python==8.0.31
 
 Create a topic named toll in kafka.
 
